@@ -104,6 +104,13 @@ body {
 
 /* rtl:end:remove */
 
+/* pricing */
+
+.pricing-header {
+  max-width: 700px;
+}
+
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 

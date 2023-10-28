@@ -20,9 +20,9 @@
     <ul class="nav nav-pills text-decoration-none ">
       <li class="nav-item"><a href="#myCarousel" class="nav-link text-white" aria-current="page">Beranda</a></li>
       <li class="nav-item"><a href="#layanan" class="nav-link text-white">Layanan</a></li>
-      <li class="nav-item"><a href="#" class="nav-link text-white">Produk</a></li>
-      <li class="nav-item"><a href="#" class="nav-link text-white">Harga</a></li>
-      <li class="nav-item"><a href="#" class="nav-link text-white">Tentang kami</a></li>
+      <li class="nav-item"><a href="#produk" class="nav-link text-white">Produk</a></li>
+      <li class="nav-item"><a href="#harga" class="nav-link text-white">Harga</a></li>
+      <li class="nav-item"><a href="#contactus" class="nav-link text-white">Hubungi kami</a></li>
       <div class="nav-item"></div>
     </ul>
   </header>
@@ -122,52 +122,119 @@
     </div>
     <div id="produk" class="card bg-dark bg-opacity-75 mt-5">
       <div class="card-body container my-5">
+        <h2 class="pb-2 border-bottom text-center text-white mb-5">Produk</h2>
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3 mb-4">
             <div class="card">
-              <img src="./img/azure.png" class="card-img-top" height="100%" alt="Product Image">
+              <img src="./img/azure.png" class="card-img-top" height="270px" alt="Product Image">
               <div class="card-body">
-                <h5 class="card-title">Product 1</h5>
-                <p class="card-text">Description of Product 1.</p>
-                <p class="card-text"><strong>Price: $100</strong></p>
+                <h5 class="card-title">Azure Web Server</h5>
+                <p class="card-text">Layanan cloud computing dari microsoft</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#free">Lihat selengkapnya</button>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 mb-4">
             <div class="card">
-              <img src="./img/aws.png" class="card-img-top my-5" alt="Product Image">
+              <img src="./img/aws.png" class="card-img-top py-5" height="270px" alt=" Product Image">
               <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Description of Product 2.</p>
-                <p class="card-text"><strong>Price: $150</strong></p>
+                <h5 class="card-title">Amazon Web Server</h5>
+                <p class="card-text">Layanan komputasi awan milik amazon.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#premium">Lihat selengkapnya</button>
+
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 mb-4">
             <div class="card">
-              <img src="./img/gcp.png" class="card-img-top my-4" alt="Product Image">
+              <img src="./img/gcp.png" class="card-img-top py-3" height="270px" alt=" Product Image">
               <div class="card-body">
-                <h5 class="card-title">Product 3</h5>
-                <p class="card-text">Description of Product 3.</p>
-                <p class="card-text"><strong>Price: $80</strong></p>
+                <h5 class="card-title">Google Cloud Platform</h5>
+                <p class="card-text">Layanan komputasi cloud terpercaya dari google.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#payg">Lihat selengkapnya</button>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 mb-4">
             <div class="card">
-              <img src="./img/alibaba.png" class="card-img-top my-0"  alt="Product Image">
+              <img src="./img/alibaba.png" class="card-img-top" height="270px" alt=" Product Image">
               <div class="card-body">
-                <h5 class="card-title">Product 4</h5>
-                <p class="card-text">Description of Product 4.</p>
-                <p class="card-text"><strong>Price: $120</strong></p>
+                <h5 class="card-title">AlibabaCloud</h5>
+                <p class="card-text">Layanan Cloud computing milik Alibaba Corp..</p>
+                <a class="card-text btn btn-primary">Lihat selengkapnya</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-    
+    <div id="harga" class="card bg-dark bg-opacity-75 mt-5">
+      <div class="card-body container my-5">
+        <h2 class="pb-2 border-bottom text-center text-white mb-5">Harga</h2>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Starter</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/bln</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Layanan gratis terbatas selama 1 tahun</li>
+                  <li>Layanan premium untuk pelajar</li>
+                  <li>VPS Up to 2gb vRam 2 vCPU</li>
+                  <li>Docker Container support</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Daftar Gratis</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3  bg-success text-white border-success">
+                <h4 class="my-0 fw-normal">Premium</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/bln</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Include all premium services</li>
+                  <li>Garansi Uptime 99.9% untuk skala besar</li>
+                  <li>VPS Up to 50 Virtual PC</li>
+                  <li>Layanan pelanggan prioritas 24/7</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-success">Pesan sekarang</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Pay As You Go</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/bln</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Include all premium services</li>
+                  <li>Garansi Uptime 99.9% untuk skala besar</li>
+                  <li>Bayar sesuai pemakaian</li>
+                  <li>Layanan pelanggan 24/7</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary">Pesan sekarang</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contactus" class="card bg-dark bg-opacity-75 mt-5">
+      <div class="card-body container my-5">
+        <h2 class="pb-2 border-bottom text-center text-white mb-5">Hubungi Kami</h2>
+        <h1 class="text-white text-center">Coming soon</h1>
+      </div>
+    </div>
   </section>
   <footer class="py-2 mt-3 bg-dark opacity-75">
     <p class="text-center text-white">Made with Love by <a href="https://roidev.my.id">Roynaldi</a></p>
