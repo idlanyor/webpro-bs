@@ -12,18 +12,58 @@
 </head>
 
 <body class="relative">
-  <header class="navbar d-flex justify-content-between bg-dark bg-opacity-75 sticky-top px-5">
-    <h3 class="text-white text-bold">
-      < Roidev />
-    </h3>
-    <ul class="nav nav-pills text-decoration-none ">
-      <li class="nav-item"><a href="#myCarousel" class="nav-link text-white" aria-current="page">Beranda</a></li>
-      <li class="nav-item"><a href="#layanan" class="nav-link text-white">Layanan</a></li>
-      <li class="nav-item"><a href="#produk" class="nav-link text-white">Produk</a></li>
-      <li class="nav-item"><a href="#harga" class="nav-link text-white">Harga</a></li>
-      <li class="nav-item"><a href="#contactus" class="nav-link text-white">Hubungi kami</a></li>
-      <div class="nav-item"></div>
-    </ul>
+  <header class="sticky-top">
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-light d-lg-none" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">🚀</button>
+    </div>
+    <div class="bg-dark bg-opacity-75 d-none d-lg-block" id="scrollspy">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link text-white" aria-current="page" href="#myCarousel">Beranda</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-white" href="#layanan">Layanan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#produk">Produk</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#harga">Harga</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#contactus">Hubungi Kami</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="offcanvas-lg bg-dark bg-opacity-75 offcanvas-end" tabindex="-1" id="offcanvasResponsive"
+      aria-labelledby="offcanvasResponsiveLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-white" id="offcanvasResponsiveLabel">Roidev</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive"
+          aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="nav justify-content-center d-lg-none d-sm-block ">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#myCarousel">Beranda</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="#layanan">Layanan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#produk">Produk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#harga">Harga</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contactus">Hubungi Kami</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
   <section class="mx-5 mt-5">
     <!-- bagian Carousel -->
@@ -240,7 +280,9 @@
         <div class="row align-items-center g-lg-5 py-5">
           <div class="col-lg-7 text-center text-lg-start">
             <h3 class="display-5 fw-bold lh-1 mb-3">Dapatkan Info lebih lanjut</h3>
-            <p class="col-lg-10 fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium perspiciatis soluta, molestiae consequuntur quaerat repudiandae voluptatem architecto doloremque minus adipisci, laboriosam praesentium neque facere quae. Amet rerum dolore recusandae.</p>
+            <p class="col-lg-10 fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium
+              perspiciatis soluta, molestiae consequuntur quaerat repudiandae voluptatem architecto doloremque minus
+              adipisci, laboriosam praesentium neque facere quae. Amet rerum dolore recusandae.</p>
           </div>
           <div class="col-md-10 mx-auto col-lg-5">
             <form class="p-4 p-md-5 border rounded-3 bg-dark bg-opacity-50 ">
@@ -253,7 +295,8 @@
                 <label for="floatingPassword">Subjek</label>
               </div>
               <div class="form-floating mb-3">
-                <textarea class="form-control bg-dark" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <textarea class="form-control bg-dark" placeholder="Leave a comment here" id="floatingTextarea2"
+                  style="height: 100px"></textarea>
                 <label for="floatingTextarea2">Pesan</label>
               </div>
               <button class="w-100 btn btn-lg btn-primary" type="submit">Kirim</button>
